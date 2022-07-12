@@ -8,6 +8,8 @@ import { RegisterComponent } from './register/register.component';
 import { BusinessComponent } from './business/business.component';
 import { CustomerComponent } from './customer/customer.component';
 import { AdminComponent } from './admin/admin.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { AdminComponent } from './admin/admin.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
