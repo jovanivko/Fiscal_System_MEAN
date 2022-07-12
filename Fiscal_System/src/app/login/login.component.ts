@@ -16,11 +16,12 @@ export class LoginComponent implements OnInit {
   
   @Input()username: string = ""
   @Input()password: string = ""
+  message:string = ""
   
   login(){
     this.userService.login(this.username, this.password).subscribe((user:User)=>{
       if(user)alert("OK");
-      else alert("Bad credentials");
+      else this.message = "Bad credentials";
     })
   }
 }
