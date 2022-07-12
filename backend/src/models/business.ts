@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
 
-let business = new Schema({
+let Business = new Schema({
     fullname: {
         type: String
     },
@@ -32,4 +32,4 @@ let business = new Schema({
     }
 })
 
-export default mongoose.model('business', business, 'businesses')
+export default mongoose.model('Business', Business, 'businesses')

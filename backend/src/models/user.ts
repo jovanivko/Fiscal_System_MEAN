@@ -2,19 +2,16 @@ import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
 
-let user = new Schema({
+let User = new Schema({
     username: {
         type:String
     },
     password: {
         type: String
     },
-    isEntity: {
-        type: Boolean
-    },
-    isAdmin: {
-        type: Boolean
+    type: {
+        type: Number
     }
 })
 
-export default mongoose.model('user', user, 'users')
+export default mongoose.model('User', User, 'users')
